@@ -47,4 +47,4 @@ def submit(): #This line defines the submit() function, which will be executed w
     return redirect(url_for('hello')) #This line redirects the user back to the root URL ('hello' function) after submitting a new message.
 
 if __name__ == '__main__': #This line checks if the script is being run directly (not imported as a module).
-    app.run(host='0.0.0.0', port=5000, debuf=True) # This line runs the Flask application on the specified host ('0.0.0.0'), port (5000), and in debug mode. The host '0.0.0.0' means the application will be accessible from external devices. The debug mode provides additional information for development purposes.
+    app.run(host='0.0.0.0', port=5000, debug=True) # This line runs the Flask application on the specified host ('0.0.0.0'), port (5000), and in debug mode. The host '0.0.0.0' means the application will be accessible from external devices. The debug mode provides additional information for development purposes.
